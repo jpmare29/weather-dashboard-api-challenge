@@ -8,6 +8,85 @@
     <title>Weather Dashboard</title>
 </head>
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 bg-primary bg-gradient text-white text-center">Weather Dashboard</div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <form id="user-form" class="card-body">
+                        <label for="city" class="form-label">Search for a City:</label>
+                        <input id="city" name="city" type="text" autofocus="true" class="form-control" placeholder="City">
+                        <label for="state" class="form-label">Enter state as two letter code:</label>
+                        <input id="state" name="state" type="text" class="form-control" placeholder="ST">
+                        <button type="submit" class="btn btn-primary">Get Weather</button>
+                    </form>
+                </div>
+                <div id="history"></div>
+            </div>
+            <div class="col-8">
+                <div class="row" id="current-date">
+                    <div class="title"></div>
+                    <div class="temp">
+                        <img src="http://openweathermap.org/img/wn/01n@2x.png" alt="">
+                    </div>
+                    <div class="wind"></div>
+                    <div class="humid"></div>
+                    <div class="uv"></div>
+                </div>
+                <div class="row d-flex">
+                    <div class="card" id="day1">
+                        <div class="title">
+                            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                        </div>
+                        <div class="temp"></div>
+                        <div class="wind"></div>
+                        <div class="humid"></div>
+                        <div class="uv"></div>
+                    </div>
+                    <div class="card" id="day2">
+                        <div class="title">
+                            <img src="" alt="">
+                        </div>
+                        <div class="temp"></div>
+                        <div class="wind"></div>
+                        <div class="humid"></div>
+                        <div class="uv"></div>
+                    </div>
+                    <div class="card" id="day3">
+                        <div class="title">
+                            <img src="" alt="">
+                        </div>
+                        <div class="temp"></div>
+                        <div class="wind"></div>
+                        <div class="humid"></div>
+                        <div class="uv"></div>
+                    </div>
+                    <div class="card" id="day4">
+                        <div class="title">
+                            <img src="" alt="">
+                        </div>
+                        <div class="temp"></div>
+                        <div class="wind"></div>
+                        <div class="humid"></div>
+                        <div class="uv"></div>
+                    </div>
+                    <div class="card" id="day5">
+                        <div class="title">
+                            <img src="" alt="">
+                        </div>
+                        <div class="temp"></div>
+                        <div class="wind"></div>
+                        <div class="humid"></div>
+                        <div class="uv"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
