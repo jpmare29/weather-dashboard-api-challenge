@@ -13,6 +13,7 @@
             <div class="col-12 bg-primary bg-gradient text-white text-center">Weather Dashboard</div>
         </div>
 
+        <!-- Form for city state weather search -->
         <div class="row">
             <div class="col-4">
                 <div class="card">
@@ -24,13 +25,16 @@
                         <button type="submit" class="btn btn-primary">Get Weather</button>
                     </form>
                 </div>
+                <!-- Empty div to append search history buttons -->
                 <div id="history"></div>
             </div>
+            <!-- Empty divs that will be populated with weather/day data -->
             <div class="col-8">
                 <div class="row" id="current-date">
+                    <div class="place"></div>
                     <div class="title"></div>
                     <div class="temp">
-                        <img src="http://openweathermap.org/img/wn/01n@2x.png" alt="">
+                        <img src="" alt="">
                     </div>
                     <div class="wind"></div>
                     <div class="humid"></div>
@@ -39,7 +43,7 @@
                 <div class="row d-flex">
                     <div class="card" id="day1">
                         <div class="title">
-                            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                            <img src="" alt="">
                         </div>
                         <div class="temp"></div>
                         <div class="wind"></div>
