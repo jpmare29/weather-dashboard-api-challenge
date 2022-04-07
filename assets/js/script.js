@@ -59,12 +59,13 @@ function formSubmitHandler(event) {
                 element.children('.temp').text('Temp: ' + data.daily[i].temp.day + 'F');
                 element.children('.wind').text('Wind Spd: ' + data.daily[i].wind_speed);
                 element.children('.humid').text('Humidity: ' + data.daily[i].humidity);
+                //conditional statement to give uv div appropriate background color
                 if (data.daily[i].uvi < 4) {
-                    element.children('.uv').attr('class', 'bg-success text-white');
+                    element.children('.uv').attr('class', 'uv bg-success text-white');
                 } else if (data.daily[i].uvi >= 4 && data.daily[i].uvi < 7) {
-                    element.children('.uv').attr('class', 'bg-warning text-white');
+                    element.children('.uv').attr('class', 'uv bg-warning text-white');
                 } else {
-                    element.children('.uv').attr('class', 'bg-danger text-white');
+                    element.children('.uv').attr('class', 'uv bg-danger text-white');
                 }
                 element.children('.uv').text('UV: ' + data.daily[i].uvi);
                 i++
@@ -97,11 +98,11 @@ searchHistory.on('click', event => {
             element.children('.wind').text('Wind Spd: ' + data.daily[i].wind_speed);
             element.children('.humid').text('Humidity: ' + data.daily[i].humidity);
             if (data.daily[i].uvi < 4) {
-                element.children('.uv').attr('class', 'bg-success text-white');
+                element.children('.uv').attr('class', 'uv bg-success text-white');
             } else if (data.daily[i].uvi >= 4 && data.daily[i].uvi < 7) {
-                element.children('.uv').attr('class', 'bg-warning text-white');
+                element.children('.uv').attr('class', 'uv bg-warning text-white');
             } else {
-                element.children('.uv').attr('class', 'bg-danger text-white');
+                element.children('.uv').attr('class', 'uv bg-danger text-white');
             }
             element.children('.uv').text('UV: ' + data.daily[i].uvi);
         i++
