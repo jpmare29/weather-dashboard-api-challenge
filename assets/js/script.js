@@ -23,7 +23,7 @@ function formSubmitHandler(event) {
     let searchedCity = cityInputEl.value;
     let searchedState = stateInputEl.value;
     let searchCombo = searchedCity + ", " + searchedState;
-    let newUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${searchedCity},${searchedState},US&limit=1&appid=2bd870c3ff12388ac354b0598f17ac0d`
+    let newUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${searchedCity},${searchedState},US&limit=1&appid=2bd870c3ff12388ac354b0598f17ac0d`
     //fetch geolocation api to tunr city and state into usable lat and long
     fetch(newUrl).then(response => {
         return response.json();
