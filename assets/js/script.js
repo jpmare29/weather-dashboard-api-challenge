@@ -59,6 +59,13 @@ function formSubmitHandler(event) {
                 element.children('.temp').text('Temp: ' + data.daily[i].temp.day + 'F');
                 element.children('.wind').text('Wind Spd: ' + data.daily[i].wind_speed);
                 element.children('.humid').text('Humidity: ' + data.daily[i].humidity);
+                if (data.daily[i].uvi < 4) {
+                    element.children('.uv').addClass('bg-success text-white');
+                } else if (data.daily[i].uvi >= 4 && data.daily[i].uvi < 7) {
+                    element.children('.uv').addClass('bg-warning text-white');
+                } else {
+                    element.children('.uv').addClass('bg-danger text-white');
+                }
                 element.children('.uv').text('UV: ' + data.daily[i].uvi);
                 i++
             })
@@ -89,6 +96,13 @@ searchHistory.on('click', event => {
             element.children('.temp').text('Temp: ' + data.daily[i].temp.day + 'F');
             element.children('.wind').text('Wind Spd: ' + data.daily[i].wind_speed);
             element.children('.humid').text('Humidity: ' + data.daily[i].humidity);
+            if (data.daily[i].uvi < 4) {
+                element.children('.uv').addClass('bg-success text-white');
+            } else if (data.daily[i].uvi >= 4 && data.daily[i].uvi < 7) {
+                element.children('.uv').addClass('bg-warning text-white');
+            } else {
+                element.children('.uv').addClass('bg-danger text-white');
+            }
             element.children('.uv').text('UV: ' + data.daily[i].uvi);
         i++
         })
