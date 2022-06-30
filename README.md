@@ -22,6 +22,6 @@ from the url stored as a data attributed in the div and title the page with the 
 city and state. The page will then be filled out just like the previous function the only difference being
 an additional history button will not be created.
 
-https://jpmare29.github.io/weather-dashboard-api-challenge/
+[Deployed Site](https://jpmare29.github.io/weather-dashboard-api-challenge/)
 
 ![2022-04-07](https://user-images.githubusercontent.com/74988217/162323629-72c9914f-44e2-4fed-acbe-796e7bc86fbb.png)
